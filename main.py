@@ -33,11 +33,14 @@ def callback(call):
 def func1(message):
     data = message.text
     bot.send_message(1087237679, f'Питання:\n@{message.from_user.username}\n{data}')
+    bot.send_message(message.chat.id, "Дякуємо! 💖 Питання успішно надіслано! ✅ Скоро воно буде розглянуте адміністратором.. 🕘")
 def func2(message):
     data = message.text
     bot.send_message(1087237679, f'Пропозиція:\n@{message.from_user.username}\n{data}')
+    bot.send_message(message.chat.id, "Дякуємо! 💖 Пропозиція успішно надіслана! ✅ Скоро вона буде розглянута адміністратором.. 🕘")
 def func3(message):
     data = message.text
     bot.send_message(1087237679, f'Запропонувати пісню:\n@{message.from_user.username}\n{data}')
+    bot.send_message(message.chat.id, "Дякуємо! 💖 Пропозиція пісні успішно надіслана! ✅ Скоро вона буде розглянута адміністратором.. 🕘")
 
 bot.polling()
